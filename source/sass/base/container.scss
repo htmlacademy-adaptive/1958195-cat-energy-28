@@ -1,0 +1,36 @@
+.container {
+  max-width: 1440px;
+  padding: 0 20px;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 31px;
+
+    &--promo {
+      padding: 0 118px;
+    }
+  }
+}
+
+// @media (min-width: 980px) {
+//   .container {
+//     padding: 0 55px;
+
+//     &--promo {
+//       padding: 0 118px;
+//     }
+//   }
+// }
+
+@media (min-width: 1200px) {
+  .container {
+    padding: 0 110px;
+
+    &--promo {
+      padding: 0 190px;
+    }
+  }
+}

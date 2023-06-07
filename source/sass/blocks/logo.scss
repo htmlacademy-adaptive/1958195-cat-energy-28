@@ -1,0 +1,51 @@
+@use "./base/var.scss";
+
+.logo {
+  z-index: 1;
+  display: inline-block;
+  width: 35px;
+  height: 38px;
+  background-image: url("../img/stack.svg#logo-mobile");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus-visible {
+    outline-offset: 2px;
+    outline: 2px solid var.$base-color--focus;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.logo__text {
+  width: 101px;
+  height: 18px;
+  background-image: url("../img/stack.svg#logo-text");
+  background-size: 102px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    min-width: 174px;
+    height: 52px;
+    background-image: url("../img/stack.svg#logo-tablet");
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo {
+    min-width: 202px;
+    height: 59px;
+    background-image: url("../img/stack.svg#logo-desktop");
+  }
+}

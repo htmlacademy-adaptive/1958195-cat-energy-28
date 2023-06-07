@@ -1,0 +1,39 @@
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0 16px 0;
+}
+
+.header__logo {
+  margin-top: -3px;
+}
+
+.header__logo-text {
+  margin-left: -10px;
+}
+
+@media (min-width: 768px) {
+  .header__logo {
+    margin-top: 0;
+    margin-right: 40px;
+  }
+
+  .header__wrapper {
+    padding: 0;
+  }
+
+  .header__logo-text {
+    display: none;
+  }
+
+  .header__menu {
+    margin-bottom: -7px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header__wrapper {
+    padding: 53px 0 29px 0;
+  }
+}

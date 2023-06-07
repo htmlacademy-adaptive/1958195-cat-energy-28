@@ -1,1 +1,19 @@
 // Начните писать стили здесь
+@use "./base/base.scss";
+@use "./base/var.scss";
+@use "./base/mixins.scss";
+@use "./base/container.scss";
+
+@use "./blocks/title.scss";
+@use "./blocks/description.scss";
+@use "./blocks/button.scss";
+@use "./blocks/button-arrow.scss";
+
+@use "./blocks/header.scss";
+@use "./blocks/logo.scss";
+@use "./blocks/menu.scss";
+@use "./blocks/main.scss";
+@use "./blocks/promo.scss";
+@use "./blocks/services.scss";
+@use "./blocks/steps.scss";
+

@@ -1,0 +1,32 @@
+.main__promo,
+.main__services {
+  margin-bottom: 20px;
+}
+
+.main__steps {
+  margin-bottom: 59px;
+}
+
+@media (min-width: 768px) {
+  .main__promo {
+    margin-bottom: 3px;
+  }
+
+  .main__services {
+    margin-bottom: 45px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main__header {
+    margin-bottom: -141px;
+  }
+
+  .main__promo {
+    margin-bottom: 82px;
+  }
+
+  .main__services {
+    margin-bottom: 71px;
+  }
+}
