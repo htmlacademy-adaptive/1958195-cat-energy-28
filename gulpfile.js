@@ -9,9 +9,9 @@ import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import autoprefixer from 'autoprefixer';
 import svgo from 'gulp-svgmin';
-import svgSprite from 'gulp-svg-sprite';
 import del from 'del';
 import browser, { reload } from 'browser-sync';
+import { stacksvg } from "gulp-stacksvg";
 
 
 // Styles
@@ -75,15 +75,12 @@ const svg = () =>
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
 
-const sprite = () => {
-  return gulp.src('source/img/svg/*.svg')
-    .pipe(svgSprite({
-      mode: {
-        stack: {
-          sprite: "../stack.svg"
-        }
-      }
-    }))
+const stack = () => {
+  return gulp.src([
+    'source/img/svg/**/*.svg'
+  ])
+    .pipe(svgo())
+    .pipe(stacksvg({ output: 'stack' }))
     .pipe(gulp.dest('build/img'));
 }
 
@@ -141,7 +138,7 @@ export const build = gulp.series(
     html,
     script,
     svg,
-    sprite,
+    stack,
     createWebp
   ),
 );
@@ -155,7 +152,7 @@ export default gulp.series(
     html,
     script,
     svg,
-    sprite,
+    stack,
     createWebp
   ),
   gulp.series(

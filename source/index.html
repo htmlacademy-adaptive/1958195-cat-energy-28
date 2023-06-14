@@ -16,13 +16,20 @@
   <body>
     <header class="main__header header">
       <div class="container">
-        <div class="header__wrapper">
+        <div class="header__wrapper header__wrapper--nojs">
           <a class="header__logo logo" href="#" aria-current="page">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="../img/stack.svg#logo-desktop" width="202" height="59">
+              <source media="(min-width: 768px)"
+                srcset="../img/stack.svg#logo-tablet" width="174" height="52">
+              <img class="logo__img" src="../img/stack.svg#logo-mobile"
+                srcset="../img/stack.svg#logo-mobile" width="35" height="38" alt="Логотип - Кэт энерджи.">
+            </picture>
             <span class="visually-hidden">Логотип - Кэт энерджи.</span>
           </a>
-          <span class="header__logo-text logo__text">
-          </span>
-          <nav class="header__menu menu">
+          <img class="header__logo-text logo__text" src="../img/stack.svg#logo-text">
+          <nav class="header__menu menu menu--nojs">
             <button class="menu__button menu__button" type="button">
               <span class="menu__button-icon"></span>
               <span class="visually-hidden">Открыть / Закрыть меню.</span>
@@ -82,7 +89,7 @@
             <li class="services__item services__item--icon-gain">
               <h3 class="services__title title">Набор массы</h3>
               <div class="services__description-wrapper">
-                <p class="services__description description ">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+                <p class="services__description description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
               </div>
               <a class="services__button button-arrow" href="#">Каталог pro</a>
             </li>
@@ -118,8 +125,8 @@
         </div>
         <div class="example__content-wrapper">
           <div class="container">
-            <div class="example__text-wrapper">
-              <p class="example__description description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <p class="example__description description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <div class="example__result">
               <div class="example__result-wrapper">
                 <dl class="example__result-group">
                   <dt class="example__result-title">снижение веса</dt>
@@ -135,12 +142,42 @@
                 <span class="example__cost">15 000 РУБ.</span>
               </div>
             </div>
-            <div class="example__img">
+            <div class="example__img-block">
               <div class="example__img-wrapper">
-                <img class="example__img-thick" width="280" height="256" src="img/boris-thick.png" alt="Вид Бориса до">
-                <img class="example__img-thin" width="280" height="256" src="img/boris-thin.png" alt="Вид Бориса после">
+                <div class="example__img-group example__img-group--before">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="img/cat-before-desktop.webp 1x, img/cat-before-desktop@2x.webp 2x" width="560" height="512">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/cat-before-tablet.webp 1x, img/cat-before-tablet@2x.webp 2x" width="560" height="512">
+                    <source type="image/webp"
+                      srcset="img/cat-before-mobile.webp 1x, img/cat-before-mobile@2x.webp 2x" width="280" height="256">
+                    <source media="(min-width: 1200px)"
+                      srcset="img/cat-before-desktop.png 1x, img/cat-before-desktop@2x.png 2x" width="560" height="512">
+                    <source media="(min-width: 768px)"
+                      srcset="img/cat-before-tablet.png 1x, img/cat-before-tablet@2x.png 2x" width="560" height="512">
+                    <img class="example__img example__img--before" src="img/cat-before-mobile.png"
+                      srcset="img/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Вид Бориса до.">
+                  </picture>
+                </div>
+                <div class="example__img-group example__img-group--after">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="img/cat-after-desktop.webp 1x, img/cat-after-desktop@2x.webp 2x" width="560" height="512">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/cat-after-tablet.webp 1x, img/cat-after-tablet@2x.webp 2x" width="560" height="512">
+                    <source type="image/webp"
+                      srcset="img/cat-after-mobile.webp 1x, img/cat-after-mobile@2x.webp 2x" width="280" height="256">
+                    <source media="(min-width: 1200px)"
+                      srcset="img/cat-after-desktop.png 1x, img/cat-after-desktop@2x.png 2x" width="560" height="512">
+                    <source media="(min-width: 768px)"
+                      srcset="img/cat-after-tablet.png 1x, img/cat-after-tablet@2x.png 2x" width="560" height="512">
+                    <img class="example__img example__img--after" src="img/cat-after-mobile.png"
+                      srcset="img/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Вид Бориса до.">
+                  </picture>
+                </div>
               </div>
-              <button class="example__img-control">
+              <button class="example__img-control" type="button">
                 <span class="visually-hidden">Подвигайте ползунок.</span>
               </button>
             </div>
@@ -152,10 +189,10 @@
         <div class="container">
           <div class="address__content-wrapper">
             <p class="address__promo-text">Приглашаем к сотрудничеству дилеров!</p>
-            <address class="address__address"><span class="address__address--street">ул. Большая Конюшенная, д. 19/8</span> <br>Санкт-Петербург</address>
+            <address class="address__address"><span class="address__address-street">ул. Большая Конюшенная, д. 19/8</span> <br>Санкт-Петербург</address>
           </div>
         </div>
-        <iframe class="address__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625719817!2d30.32047247732077!3d59.938719162093584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sil!4v1685656279208!5m2!1sru!2sil" width="100%" height="362" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class="address__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625719817!2d30.32047247732077!3d59.938719162093584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sil!4v1685656279208!5m2!1sru!2sil" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
     </main>
     <footer class="footer">
