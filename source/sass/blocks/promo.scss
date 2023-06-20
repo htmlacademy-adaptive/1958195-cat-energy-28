@@ -13,7 +13,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: calc(100% - 180px);
+    height: calc(100% - 178px);
     position: absolute;
     opacity: 0.85;
     background-color: var.$base-color;
@@ -31,7 +31,7 @@
 }
 
 .promo__text-wrapper {
-  margin-bottom: 31px;
+  margin-bottom: 29px;
 }
 
 .promo__title {
@@ -58,7 +58,7 @@
 }
 
 .promo__img {
-  margin-bottom: -3px;
+  margin-bottom: -1px;
 }
 
 @media (min-width: 768px) {
