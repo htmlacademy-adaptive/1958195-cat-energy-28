@@ -180,6 +180,22 @@
 }
 
 @media (min-width: 1200px) {
+  .menu {
+    max-width: 46%;
+
+    &--inner {
+      max-width: 100%;
+    }
+
+    &--inner .menu__link {
+      color: #111111;
+
+      &[aria-current="page"]::before {
+        background-color: var.$base-color;
+      }
+    }
+  }
+
   .menu__button {
     display: none;
   }
@@ -189,6 +205,7 @@
     display: flex;
     flex-wrap: wrap;
     border-bottom: none;
+    margin-top: -4px;
     background-color: transparent;
   }
 
@@ -204,6 +221,7 @@
     font-size: 20px;
     line-height: 30px;
     color: #ffffff;
+    padding: 8px 0;
 
     &[aria-current="page"]::before {
       background-color: #ffffff;

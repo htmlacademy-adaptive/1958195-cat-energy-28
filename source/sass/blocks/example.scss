@@ -2,12 +2,13 @@
 @use "./base/var.scss";
 
 .example {
-  padding: 25px 0 40px;
+  padding: 27px 0 36px;
   background-color: #eaeaea;
 }
 
 .example__title {
-  margin-bottom: 30px;
+  margin-bottom: 42px;
+  font-size: 36px;
 }
 
 .example__description {
@@ -35,7 +36,7 @@
   max-width: 90px;
   padding: 0 10px;
   background-color: #eaeaea;
-  margin-top: -8px;
+  margin-top: -10px;
   order: 2;
   align-self: center;
 }
@@ -64,7 +65,7 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #000000;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 }
 
 .example__cost-title {
@@ -154,7 +155,7 @@
   .example {
     position: relative;
     background-color: transparent;
-    padding: 43px 0 101px;
+    padding: 54px 0 100px;
     border-top: 1px solid #e6e6e6;
 
     &::after {
@@ -169,6 +170,11 @@
     }
   }
 
+  .example__title {
+    margin-bottom: 76px;
+    font-size: 60px;
+  }
+
   .example__description {
     font-size: 16px;
     line-height: 24px;
@@ -178,19 +184,26 @@
   .example__result {
     display: flex;
     align-items: center;
-    margin-bottom: 99px;
+    margin-bottom: 78px;
+  }
+
+  .example__result-wrapper {
+    gap: 40px;
+    margin-right: 40px;
   }
 
   .example__result-description {
-    padding: 15px 30px 20px;
+    padding: 15px 30px 18px;
     font-size: 30px;
     line-height: 37px;
+    max-width: 200px;
   }
 
   .example__result-title {
     font-size: 14px;
     line-height: 14px;
-    max-width: none;
+    margin-top: -8px;
+    max-width: 145px;
     background-color: #ffffff;
   }
 
@@ -201,6 +214,7 @@
     flex-direction: column;
     align-items: flex-end;
     margin-left: auto;
+    margin-top: -11px;
   }
 
   .example__cost-title {
@@ -252,7 +266,7 @@
   }
 
   .example__title {
-    margin-bottom: 76px;
+    margin-bottom: 88px;
   }
 
   .example__content-wrapper {
@@ -272,7 +286,7 @@
   }
 
   .example__result-wrapper {
-    gap: 42px;
+    gap: 40px;
     margin-bottom: 55px;
   }
 
@@ -287,13 +301,13 @@
 
   .example__cost-title {
     margin-bottom: 0;
-    margin-right: 63px;
+    margin-right: 66px;
   }
 
   .example__img-block {
     position: absolute;
     bottom: 10px;
-    right: 0;
+    right: 7.7%;
   }
 }
 

@@ -21,7 +21,7 @@
 
   &::after {
     z-index: -2;
-    background: var.$base-color url("../img/promo-bg-mobile.jpg") no-repeat center top / cover;
+    background: var.$base-color url("../img/bg/promo-bg-mobile.jpg") no-repeat center top / cover;
   }
 }
 
@@ -113,15 +113,15 @@
     order: 0;
     padding: 18px 27px;
     font-size: 20px;
+    margin-left: 3px;
   }
 }
 
 @media (min-width: 1200px) {
   .promo {
     position: static;
-    padding: 223px 0 185px;
+    padding: 80px 0 120px;
     text-align: left;
-    height: 694px;
 
     &::before,
     &::after {
@@ -132,7 +132,7 @@
     }
 
     &::after {
-      background-image: url("../img/promo-bg-desktop.jpg");
+      background-image: url("../img/bg/promo-bg-desktop.jpg");
       background-position: bottom left;
     }
   }
@@ -150,5 +150,9 @@
     transform: translateX(-29.5%);
     width: 552px;
     height: 499px;
+  }
+
+  .promo__button {
+    margin-left: 0;
   }
 }

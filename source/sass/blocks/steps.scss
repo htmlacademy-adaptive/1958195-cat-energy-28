@@ -68,7 +68,7 @@
   .steps__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 36px 64px;
+    gap: 56px 64px;
     counter-reset: item;
   }
 

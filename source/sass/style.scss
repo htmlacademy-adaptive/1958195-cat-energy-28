@@ -3,6 +3,7 @@
 @use "./base/var.scss";
 @use "./base/mixins.scss";
 @use "./base/container.scss";
+@use "./blocks/body.scss";
 @use "./blocks/title.scss";
 @use "./blocks/description.scss";
 @use "./blocks/button.scss";
@@ -18,4 +19,7 @@
 @use "./blocks/address.scss";
 @use "./blocks/social.scss";
 @use "./blocks/footer.scss";
-
+@use "./blocks/product.scss";
+@use "./blocks/extra.scss";
+@use "./blocks/border.scss";
+@use "./blocks/banner.scss";
