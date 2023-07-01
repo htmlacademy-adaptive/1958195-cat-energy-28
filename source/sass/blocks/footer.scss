@@ -57,11 +57,15 @@
     mask-image: url("../img/stack.svg#logo-htmlacademy");
     background-color: #666666;
   }
-}
 
-.footer__developer-link:hover::after {
-  background-color: var.$base-color;
-  transition: all 0.3s ease;
+  &:hover::after {
+    background-color: var.$base-color;
+    transition: all 0.3s ease;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .footer__developer-icon {
