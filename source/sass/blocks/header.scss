@@ -13,6 +13,11 @@
   padding: 10px 0 13px;
 }
 
+.header__logo-text {
+  margin: 0 auto;
+  margin-bottom: -5px;
+}
+
 @media (max-width: 767px) {
   .header__wrapper {
     &--nojs {

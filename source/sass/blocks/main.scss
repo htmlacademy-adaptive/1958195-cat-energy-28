@@ -19,6 +19,10 @@
   margin-bottom: 35px;
 }
 
+.main__form {
+  margin-bottom: 30px;
+}
+
 @media (min-width: 768px) {
   .main__promo {
     margin-bottom: 3px;
@@ -38,6 +42,10 @@
 
   .main__extra {
     margin-bottom: 76px;
+  }
+
+  .main__form {
+    margin-bottom: 72px;
   }
 }
 
@@ -60,5 +68,9 @@
 
   .main__extra {
     margin-bottom: 87px;
+  }
+
+  .main__form {
+    margin-bottom: 82px;
   }
 }

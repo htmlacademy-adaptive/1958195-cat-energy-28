@@ -24,15 +24,15 @@
     opacity: 0.85;
     background-color: var.$base-color;
   }
-}
 
-.banner__icon {
-  display: block;
-  width: 78px;
-  height: 80px;
-  margin-bottom: 48px;
-  mask-image: url("../img/stack.svg#icon-gift");
-  background-color: #ffffff;
+  &--icon::before {
+    content: "";
+    width: 78px;
+    height: 80px;
+    margin-bottom: 48px;
+    mask-image: url("../img/stack.svg#icon-gift");
+    background-color: #ffffff;
+  }
 }
 
 .banner__description {
@@ -50,10 +50,10 @@
     justify-content: space-between;
     align-items: center;
     background-position: center -318px;
-  }
 
-  .banner__icon {
-    margin: 0;
+    &--icon::before {
+      margin: 0;
+    }
   }
 
   .banner__description {
@@ -69,10 +69,10 @@
     justify-content: none;
     align-items: center;
     background-position: -33px center;
-  }
 
-  .banner__icon {
-    margin-bottom: 48px;
+    &--icon::before {
+      margin-bottom: 48px;
+    }
   }
 
   .banner__description {
