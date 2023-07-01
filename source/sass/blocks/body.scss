@@ -15,8 +15,6 @@
 }
 
 .body__header {
-  margin-bottom: 32px;
-
   &--inner {
     margin-bottom: 27px;
   }
@@ -24,6 +22,8 @@
 
 @media (min-width: 768px) {
   .body__header {
+    margin-bottom: 29px;
+
     &--inner {
       margin-bottom: 64px;
     }
